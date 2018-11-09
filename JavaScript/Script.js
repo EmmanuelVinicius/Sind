@@ -31,6 +31,14 @@ jQuery(function ($) {
     if ($(window).width() <= 768) {
         $(".page-wrapper").removeClass("toggled");
     }
-    var data = new Date();
-    $("#inicial").val(data.getDate())
+    $("[value='Pesquisar']").click(function(){
+        $(".table").removeClass("d-none");
+        $(".espacos").removeClass("d-block")
+        $(".espacos").addClass("d-none")
+    })
+    $("[value='Limpar']").click(function () {
+        $(".table").addClass("d-none");
+        $(".espacos").addClass("d-block")
+        $(".espacos").removeClass("d-none")
+    })
 });

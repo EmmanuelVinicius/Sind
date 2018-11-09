@@ -240,14 +240,31 @@ body {
     border-radius: 25px;
 }
 
+@media screen and (max-width: 768px) {
+    .login {
+        width: 100%;
+    }
+}
+
 .box {
     -webkit-box-shadow: -4px 6px 5px 0px rgba(0, 0, 0, 0.38);
     -moz-box-shadow: -4px 6px 5px 0px rgba(0, 0, 0, 0.38);
     box-shadow: -4px 6px 5px 0px rgba(0, 0, 0, 0.38);
 }
 
+h1 {
+    text-shadow: -0.04em 0.04em 0.09em rgb(139, 139, 139)
+}
+
 .form-control:focus {
     box-shadow: 0 0 0 0;
     border: 1px solid #8d0c0c;
     outline: 0;
+}
+
+footer {
+    background: #cacaca;
+    background-size: cover;
+    margin: -1rem;
+    padding: 1rem;
 }

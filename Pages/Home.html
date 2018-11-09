@@ -105,10 +105,17 @@
                         <i class="fas fa-times"></i>
                     </div>
                 </div>
+                <div class="px-3">
+                    <small>
+                        Sindicato dos Trabalhadores Públicos Municipais de Vargem Grande do Sul
+                    </small>
+                    <p>
+                        <b>
+                            <br>SSPM Compras
+                        </b>
+                    </p>
+                </div>
                 <div class="sidebar-menu">
-
-
-
                     <ul>
                         <li class="header-menu">
                             <span>Menu</span>
@@ -137,13 +144,19 @@
                                 <span>Ajuda</span>
                             </a>
                         </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-info"></i>
+                                <span>Sobre</span>
+                            </a>
+                        </li>
                     </ul>
                 </div>
                 <!-- sidebar-menu  -->
             </div>
             <!-- sidebar-content  -->
             <div class="sidebar-footer">
-                <a href="Login.html">
+                <a href="../Login.html">
                     <i class="fa fa-power-off"></i>
                     <span>Sair</span>
                 </a>
@@ -153,17 +166,17 @@
         <main class="page-content">
             <div class="p-3 mb-5 bg-light rounded border box">
                 <div class="principal">
-                    <h1 class="text-center">Menu Principal</h1>
-                    <h5>Bem Vindo, <br>
-                        <span class="nome">Ademir de Oliveira</span>!</h5>
+                    <h1 class="text-center display-4">Menu Principal</h1>
+                    <h5>Bem Vindo,
+                        <br>
+                        <span id="nome">Ademir de Oliveira Corsi</span>!</h5>
                     <hr>
                 </div>
                 <div class="bg-white rounded border mt-5 p-3">
-                    ATENÇÃO SERVIDOR: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium eligendi quam unde, quisquam distinctio
-                    dolorum ipsam sunt harum, ad id doloribus, suscipit porro saepe? Voluptates blanditiis libero eligendi
-                    quibusdam ducimus! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt, itaque? Voluptatibus,
-                    adipisci dicta accusamus iste aspernatur rem porro accusantium veniam aliquam placeat excepturi sapiente
-                    omnis distinctio saepe? Ut, odit laboriosam?
+                    ATENÇÃO SERVIDOR, Comunicado Importante: Estamos trabalhando para normalizar os limites de crédito. Se você possui dívidas
+                    parceladas realizadas antes do dia 10/08/2013 elas serão deduzidas conforme parcela junto ao crédito.
+                    Lembramos também que o bônus de R$ 200,00 já está incluso no total do crédito, por exemplo: Se seu crédito
+                    é de R$500,00 então, R$200,00 conta como bônus e os R$300,00 restantes como crédito.
                     <br>
                     <br>
                     <br>
@@ -172,28 +185,58 @@
                     <br>
                 </div>
                 <br>
+                <p class="float-right ">
+                    <span id="periodoDia"></span>
+                    - Hoje é dia
+                    <span id="data"></span>
+                </p>
                 <br>
                 <br>
-            <hr>
-            <footer>
-                <h4>SSPM - Todos os direitos reservados</h4>
-                <p class="text-right">
-                    Atendimento: (31)98765-4321
-                </p>
-                <p>
-                    conteúdo do footer
-                </p>
-            </footer>
+                <hr>
+                <footer>
+                    <h4>SSPM - Todos os direitos reservados</h4>
+                    <div class="row">
+
+                        <p class="col-md-4 text-center offset-md-8">
+                            Atendimento:
+                            <br>(19) 3641-2827
+                            <br>(Horário Comercial)
+                        </p>
+                        <p class="col-md-6">
+                            <small>
+                                Analista: Renato Alves - renato_br@bol.com.br
+                                <br>Designer: Emmanuel Vinicius - emmanuel.vinicius.98@gmail.com
+                            </small>
+                        </p>
+                    </div>
+                </footer>
         </main>
         <!-- page-content" -->
-    </div>
-    <!-- page-wrapper -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
-    <script src="../JavaScript/Script.js"></script>
+        </div>
+        <!-- page-wrapper -->
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/locale/pt-br.js"></script> -->
+        <script src="../JavaScript/moment-with-locales.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+        <script src="../JavaScript/Script.js"></script>
+        <script>
+            var data = new Date();
+            moment.locale('pt-br')
+
+            $("#data").text(" " + moment().format('LL'));
+
+            var periodo = $("#periodoDia");
+            if (data.getHours() > 4 && data.getHours() < 12) {
+                periodo.text("Bom dia! ");
+            } else if (data.getHours() > 12 && data.getHours() < 18) {
+                periodo.text("Boa tarde! ");
+            } else {
+                periodo.text("Boa noite! ");
+            }
+        </script>
 </body>
 
 </html>

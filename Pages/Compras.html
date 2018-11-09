@@ -29,10 +29,17 @@
                         <i class="fas fa-times"></i>
                     </div>
                 </div>
+                <div class="px-3">
+                    <small>
+                        Sindicato dos Trabalhadores Públicos Municipais de Vargem Grande do Sul
+                    </small>
+                    <p>
+                        <b>
+                            <br>SSPM Compras
+                        </b>
+                    </p>
+                </div>
                 <div class="sidebar-menu">
-
-
-
                     <ul>
                         <li class="header-menu">
                             <span>Menu</span>
@@ -61,13 +68,19 @@
                                 <span>Ajuda</span>
                             </a>
                         </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-info"></i>
+                                <span>Sobre</span>
+                            </a>
+                        </li>
                     </ul>
                 </div>
                 <!-- sidebar-menu  -->
             </div>
             <!-- sidebar-content  -->
             <div class="sidebar-footer">
-                <a href="Login.html">
+                <a href="../Login.html">
                     <i class="fa fa-power-off"></i>
                     <span>Sair</span>
                 </a>
@@ -77,14 +90,14 @@
         <main class="page-content">
             <div class="p-3 mb-5 bg-light rounded border box">
                 <div class="principal">
-                    <h1 class="text-center">Pesquisa de vendas por período</h1>
+                    <h1 class="text-center display-4">Pesquisa de vendas por período</h1>
                     <hr>
                 </div>
                 <form class="row">
                     <div class="col-md-6">
                         <div class="input-group mb-3">
                             <div class="input-group-prepend">
-                                <span class="input-group-text" id="inicial">Data Inicial</span>
+                                <span class="input-group-text">Data Inicial</span>
                             </div>
                             <input type="date" name="Data" id="inicial" class="form-control">
                         </div>
@@ -94,16 +107,19 @@
                             </div>
                             <input type="date" name="Data" id="final" class="form-control">
                         </div>
-                        <input class="btn btn-outline-secondary" type="submit" value="Pesquisar">
+                        <input class="btn btn-outline-secondary px-5" type="button" value="Pesquisar">
                         <input class="btn btn-outline-secondary" type="reset" value="Limpar">
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-2">
+                        <button type="button" class="btn btn-outline-secondary align-self-start">Gerar Arquivos</button>
+                    </div>
+                    <div class="col-md-2">
                         <label>Vizualizar em:</label>
                         <br>
                         <a href="#" class="badge badge-dark">HTML</a>
                         <a href="#" class="badge badge-dark">PDF</a>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-2">
                         <label>Exportar para:</label>
                         <br>
                         <a href="#" class="badge badge-dark">DOC</a>
@@ -112,23 +128,86 @@
                 </form>
                 <div class="bg-white rounded border mt-5">
                     <h5 class="p-3">Pesquisa de vendas por empresa</h5>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
+                    <div class="espacos">
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table d-none">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Autorização</th>
+                                    <th scope="col">Comércio</th>
+                                    <th scope="col">Nome</th>
+                                    <th scope="col">Data</th>
+                                    <th scope="col">Compra</th>
+                                    <th scope="col">Valor</th>
+                                    <th scope="col">Parcela</th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>.</td>
+                                    <td>.</td>
+                                    <td>.</td>
+                                    <td>.</td>
+                                    <td>.</td>
+                                    <td>.</td>
+                                    <td>.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>.</td>
+                                    <td>.</td>
+                                    <td>.</td>
+                                    <td>.</td>
+                                    <td>.</td>
+                                    <td>.</td>
+                                    <td>.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>.</td>
+                                    <td>.</td>
+                                    <td>.</td>
+                                    <td>.</td>
+                                    <td>.</td>
+                                    <td>.</td>
+                                    <td>.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
                 <hr>
                 <footer>
                     <h4>SSPM - Todos os direitos reservados</h4>
-                    <p class="text-right">
-                        Atendimento: (31)98765-4321
-                    </p>
-                    <p>
-                        conteúdo do footer
-                    </p>
+                    <div class="row">
+
+                        <p class="col-md-4 text-center offset-md-8">
+                            Atendimento:
+                            <br>(19) 3641-2827
+                            <br>(Horário Comercial)
+                        </p>
+                        <p class="col-md-6">
+                            <small>
+                                Analista: Renato Alves - renato_br@bol.com.br
+                                <br>Designer: Emmanuel Vinicius - emmanuel.vinicius.98@gmail.com
+                            </small>
+                        </p>
+                    </div>
                 </footer>
         </main>
         <!-- page-content" -->
