@@ -48,6 +48,7 @@ body {
 /*----------------sidebar-wrapper----------------*/
 
 .sidebar-wrapper {
+    font-size: 1.2rem;
     width: 380px;
     height: 100%;
     max-height: 100%;
@@ -197,7 +198,7 @@ body {
     border: 1px solid #803300;
     margin-bottom: 20px;
     height: 150px;
-    padding: 50px;
+    padding: 40px;
 }
 
 .chiller-theme .sidebar-wrapper .sidebar-menu ul li:hover>a, .chiller-theme .sidebar-wrapper .sidebar-menu .sidebar-dropdown.active>a, .chiller-theme .sidebar-wrapper .sidebar-header .user-info {
